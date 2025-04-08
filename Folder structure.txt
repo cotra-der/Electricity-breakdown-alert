@@ -1,0 +1,32 @@
+electricity-breakdown-alert/
+├── app/                            # Android application
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/poweralert/
+│   │   │   │   ├── MainActivity.java
+│   │   │   │   ├── AdminActivity.java
+│   │   │   │   ├── ResidentActivity.java
+│   │   │   │   ├── MapActivity.java
+│   │   │   │   ├── models/
+│   │   │   │   │   ├── PowerOutage.java
+│   │   │   │   │   └── Sector.java
+│   │   │   │   ├── services/
+│   │   │   │   │   └── NotificationService.java
+│   │   │   │   └── utils/
+│   │   │   │       └── FirebaseHelper.java
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   │   ├── activity_main.xml
+│   │   │   │   │   ├── activity_admin.xml
+│   │   │   │   │   ├── activity_resident.xml
+│   │   │   │   │   └── activity_map.xml
+│   │   │   │   └── ...
+│   │   │   └── AndroidManifest.xml
+│   │   └── ...
+│   └── build.gradle
+├── firebase/
+│   ├── functions/
+│   │   ├── index.js
+│   │   └── package.json
+│   └── database.rules.json
+└── README.md
