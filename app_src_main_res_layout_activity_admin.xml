@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electricity Board Control Panel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Sector:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <Spinner
+        android:id="@+id/sectorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btnReportPowerCut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REPORT POWER OUTAGE"
+        android:backgroundTint="#F44336"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btnRestorePower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESTORE POWER"
+        android:backgroundTint="#4CAF50"
+        android:padding="15dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Updates:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/logView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW OUTAGE MAP"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

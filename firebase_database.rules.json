@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "power_outages": {
+      ".read": true,
+      "$sectorId": {
+        ".write": "auth != null && auth.token.admin === true",
+        ".validate": "newData.hasChildren(['status', 'lastUpdated'])",
+        "status": {
+          ".validate": "newData.val() === 'power_cut' || newData.val() === 'normal'"
+        },
+        "lastUpdated": {
+          ".validate": "newData.isNumber()"
+        }
+      }
+    },
+    "outage_history": {
+      ".read": "auth != null",
+      ".write": false
+    }
+  }
+}
